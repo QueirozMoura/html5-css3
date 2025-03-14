@@ -1,0 +1,10 @@
+@charset "UTF-8"; 
+
+body {
+    background-color: aquamarine;
+    font: normal 16px arial, serif ;
+}
+
+h1{
+    color: azure;
+}
