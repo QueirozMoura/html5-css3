@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Exemplo de cadastro</h1>
-    <form action="cadastro.php" method="get"></form>
-    <p>
-        <label for="iemail"></label>
-        <input type="email" name="email" id="iemail" required>
-    </p>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iemail"></label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Digite seu email">
+            </p>
+            <label for="itel">Tefone:</label>
+            <input type="tel" name="tel" id="itel" required placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" title="Formato: (99) 99999-9999" autocomplete="tel">
+            <p>
+        </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
 </body>
+
 </html>
