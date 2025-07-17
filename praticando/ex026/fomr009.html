@@ -9,8 +9,9 @@
     <h1>Exemplos de Formularios</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
         <div>
-            <label for="inum1">Numero 1:</label>
-            <input type="range" name="num1" id="inum1">
+            <label for="inum">Numero:</label>
+            <input type="range" name="num" id="inum" min="0" max="100" value="50" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">50</output>
         </div>
         <div>
             <input type="submit" value="Enviar">
