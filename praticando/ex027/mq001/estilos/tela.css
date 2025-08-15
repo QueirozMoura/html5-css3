@@ -26,6 +26,16 @@ header {
 
 menu li {
     display: inline-block; /* Exibe os itens do menu em linha */
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: blue; /* Cor dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha os links ao passar o mouse */
 }
 
 menu ul {
