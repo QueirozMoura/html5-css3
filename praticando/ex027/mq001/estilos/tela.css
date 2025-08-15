@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Estilos para impressora */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; /* Tamanho base da fonte */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left; /* deixa o texto no meio da tela */
+}
+
+menu li {
+    display: inline-block; /* Exibe os itens do menu em linha */
+}
+
+menu ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    background-color: darkgray;
+}
+
+article {
+    width: 600px;
+    display: block; /* Garante que o artigo seja exibido como bloco */
+    margin: auto;
+}

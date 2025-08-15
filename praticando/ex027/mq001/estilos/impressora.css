@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Estilos para impressora */
+
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em; /* Tamanho base da fonte para impressão */
+    line-height: 1.5em; /* Maior espaçamento entre linhas para facilitar a leitura */
+}
+
+menu {
+    display: none; /* Esconde o menu na impressão */
+}
+
+article::after {
+    content: "Esse é um artigo impresso - impresso com media query feito por GQ www.gustavoqueiroz.com.br";
+}
