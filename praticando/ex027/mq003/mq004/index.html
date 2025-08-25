@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(12, 181, 227, 0.5);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                background-image: url('../imagens/cev-landscape.jpg');
+                width: 100vw;
+                height: 100vh;
+            }
+            
+            p {
+                color: yellow;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            body {
+                background-image: url('../imagens/cev-portrait.jpg');
+                width: 100vw;
+                height: 100vh;
+            }
+
+            p {
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi quia nisi omnis sit, doloremque molestiae veniam quas rem, debitis ratione, saepe consectetur fuga natus ipsum est atque itaque harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, magnam asperiores? Laborum asperiores aspernatur deserunt, repudiandae assumenda unde quo recusandae perferendis provident nisi enim eligendi qui pariatur numquam magnam quidem.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, omnis. Voluptates sit quia incidunt, molestiae dolor, voluptatem odit atque odio porro pariatur nam temporibus. Explicabo assumenda natus recusandae impedit a.</p>
+</body>
+</html>
