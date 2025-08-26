@@ -10,19 +10,130 @@
     1201px and more — Extra large screens, TV */
 
 
-@media print { /* impressão */
+@media print {
+    /* impressão */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none !important;
+        color: black !important;
+        background: none !important;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    } /* apenas para visualização, não será impressa */
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+    
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 992px) { /* tablets e iPads */
-    body 
+@media screen and (min-width: 481px) and (max-width: 992px) {
+
+    /* tablets e iPads */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
 
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) { /* desktops e telas grandes */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    /* desktops e telas grandes */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+    main {
+        width: 500px;
+    }
+
 
 }
 
-@media screen and (min-width: 1201px) { /* telas extra grandes, TV */
+@media screen and (min-width: 1201px) {
+
+    /* telas extra grandes, TV */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+   img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
 
 }
