@@ -10,12 +10,19 @@
     1201px and more — Extra large screens, TV */
 
 
-@mdia print {
+@media print { /* impressão */
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 992px) {
+@media screen and (min-width: 481px) and (max-width: 992px) { /* tablets e iPads */
+    body 
 
 }
 
-@media 
+@media screen and (min-width: 993px) and (max-width: 1200px) { /* desktops e telas grandes */
+
+}
+
+@media screen and (min-width: 1201px) { /* telas extra grandes, TV */
+
+}
