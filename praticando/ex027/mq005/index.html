@@ -11,8 +11,8 @@
 <body>
     <header>
         <h1>Media Queries</h1>
-        <span id="burguer" class="material-symbols-outlined" id="btn-menu">menu</span>
-        <nav>
+        <span id="burguer" class="material-symbols-outlined" id="btn-menu" onclick="clickMenu()">menu</span>
+        <nav id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -31,5 +31,15 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam, quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus optio, deleniti repudiandae voluptatum quibusdam blanditiis fugiat impedit, ipsam, ex assumenda dolor quod error consectetur illum accusamus magni eaque veritatis aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, aut debitis nostrum commodi deleniti saepe veritatis amet. Repellat minus eaque autem eveniet, numquam illo, laborum fuga aperiam expedita excepturi consequuntur.</p>
         </article>
     </main>
+    <script>
+    function clickMenu() {
+        var itens = document.getElementById('itens');
+        if (itens.style.display === 'block') {
+            itens.style.display = 'none';
+        } else {
+            itens.style.display = 'block';
+        }
+    }
+</script>
 </body>
 </html>
