@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <!--Icone Do Menu-->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+
+<body onresize="mudouTamanho()">
     <header>
         <h1>Media Queries</h1>
         <span id="burguer" class="material-symbols-outlined" id="btn-menu" onclick="clickMenu()">menu</span>
@@ -16,7 +20,7 @@
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>   
+                <li><a href="#">Opção 3</a></li>
                 <li><a href="#">Opção 4</a></li>
                 <li><a href="#">Opção 5</a></li>
             </ul>
@@ -25,21 +29,49 @@
     <main>
         <article>
             <h2>Exemplo de Media Queries</h2>
-            <p>Este é um exemplo simples de como usar media queries para alterar o estilo da página com base na largura da tela.</p>
-            <p>Redimensione a janela do navegador para ver as mudanças de estilo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam molestiae rerum, quisquam tempora ipsa optio quas eligendi velit. Rerum debitis ratione aspernatur quos soluta numquam facere. Dolore maiores inventore exercitationem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quia nisi impedit labore dolor consequuntur quaerat provident eius vel corrupti perferendis ad mollitia explicabo tempora nemo molestiae aut, magni nam.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo repellat pariatur hic quos, veniam, mollitia ut adipisci dolorum soluta libero, amet harum saepe iste aspernatur totam enim veritatis officia sapiente. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur magnam perspiciatis maxime quidem deserunt architecto incidunt quia totam explicabo, iusto labore exercitationem voluptate cupiditate, dolor illum, dolores magni similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quas est dolor excepturi eligendi natus deleniti sequi debitis. Officia ipsa neque at suscipit ratione. Maxime perferendis modi eligendi suscipit vel?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam, quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus optio, deleniti repudiandae voluptatum quibusdam blanditiis fugiat impedit, ipsam, ex assumenda dolor quod error consectetur illum accusamus magni eaque veritatis aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, aut debitis nostrum commodi deleniti saepe veritatis amet. Repellat minus eaque autem eveniet, numquam illo, laborum fuga aperiam expedita excepturi consequuntur.</p>
+            <p>Este é um exemplo simples de como usar media queries para alterar o estilo da página com base na largura
+                da tela.</p>
+            <p>Redimensione a janela do navegador para ver as mudanças de estilo. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Ullam molestiae rerum, quisquam tempora ipsa optio quas eligendi velit.
+                Rerum debitis ratione aspernatur quos soluta numquam facere. Dolore maiores inventore exercitationem?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quia nisi impedit labore dolor
+                consequuntur quaerat provident eius vel corrupti perferendis ad mollitia explicabo tempora nemo
+                molestiae aut, magni nam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo repellat pariatur hic quos, veniam,
+                mollitia ut adipisci dolorum soluta libero, amet harum saepe iste aspernatur totam enim veritatis
+                officia sapiente. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur magnam
+                perspiciatis maxime quidem deserunt architecto incidunt quia totam explicabo, iusto labore
+                exercitationem voluptate cupiditate, dolor illum, dolores magni similique. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Ipsa quas est dolor excepturi eligendi natus deleniti sequi debitis.
+                Officia ipsa neque at suscipit ratione. Maxime perferendis modi eligendi suscipit vel?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam, quidem. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam, quidem. Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Natus optio, deleniti repudiandae voluptatum quibusdam blanditiis
+                fugiat impedit, ipsam, ex assumenda dolor quod error consectetur illum accusamus magni eaque veritatis
+                aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, aut debitis nostrum commodi
+                deleniti saepe veritatis amet. Repellat minus eaque autem eveniet, numquam illo, laborum fuga aperiam
+                expedita excepturi consequuntur.</p>
         </article>
     </main>
     <script>
-    function clickMenu() {
-        var itens = document.getElementById('itens');
-        if (itens.style.display === 'block') {
-            itens.style.display = 'none';
-        } else {
-            itens.style.display = 'block';
+        function mudouTamanho() {
+            var itens = document.getElementById('itens');
+            if (window.innerWidth >= 600) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
         }
-    }
-</script>
+
+        function clickMenu() {
+            var itens = document.getElementById('itens');
+            if (itens.style.display === 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
+            }
+        }
+    </script>
 </body>
+
 </html>
