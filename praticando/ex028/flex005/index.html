@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox centralizado</title>
+    <title>Centralizando FlexBox</title>
     <style>
         * {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        main {
+            background-color: bisque;
+            height: 100vh;
+            width: 110vw;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: crimson;
+            height: 200px;
+            width: 200px;
         }
     </style>
 </head>
 <body>
     <main>
-
+        <section>
+            <h1>Tela de Login</h1>
+        </section>
     </main>
 </body>
 </html>
