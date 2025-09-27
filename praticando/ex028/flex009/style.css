@@ -16,21 +16,46 @@ body {
 
 header {
     background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 header h1 {
     border: 1px dotted black;
 }
 
+nav {
+    text-align: right;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 10px;
 }
 
 nav ul li {
     display: inline-block; /* Deixa os itens em linha */
     margin-right: 20px;    /* Espaço entre eles */
+}
+
+nav ul li a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 main {
